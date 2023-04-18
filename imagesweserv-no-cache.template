@@ -8,7 +8,8 @@ server {
     access_log /var/log/nginx/weserv-stats.log stats buffer=4096 flush=5m;
     error_log /var/log/nginx/weserv-error.log;
 
-    root /var/www/imagesweserv/public;
+    # Remove the docs:
+    # root /var/www/imagesweserv/public;
 
     error_page 404 /404.html;
 
