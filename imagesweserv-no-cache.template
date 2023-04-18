@@ -1,6 +1,6 @@
 server {
-    listen $PORT default_server;
-    listen [::]:$PORT default_server ipv6only=on;
+    listen _PORT_ default_server;
+    listen [::]:_PORT_ default_server ipv6only=on;
 
     server_name _;
 
