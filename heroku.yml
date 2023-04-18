@@ -2,5 +2,5 @@ build:
   docker: 
     web: Dockerfile
 run:
-  web: sed -i "s/__PORT__/$PORT/g" /etc/nginx/imagesweserv.conf && nginx -g 'daemon off;'
+  web: sed -i "s/_PORT_/$PORT/g" /etc/nginx/imagesweserv.conf && nginx -g 'daemon off;'
   
