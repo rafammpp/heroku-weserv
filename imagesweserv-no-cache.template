@@ -26,7 +26,8 @@ server {
     }
 
     location @proxy {
-        resolver 8.8.8.8; # Use Google's open DNS server
+        resolver 8.8.8.8 ipv6=off; # Use Google's open DNS server
+        
         weserv proxy;
     }
 
