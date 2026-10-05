@@ -18,7 +18,7 @@ server {
     add_header Access-Control-Allow-Origin '*' always; # CORS
     add_header Timing-Allow-Origin '*' always;
     add_header X-Images-Api '5' always;
-    add_header Cache-Tag "weserv,type:$sent_http_content_type" always; # Useful for Cloudflare cache invalidation
+    add_header Cache-Tag "app:weserv,type:$sent_http_content_type" always; # Useful for Cloudflare cache invalidation
     add_header X-Upstream-Response-Length $weserv_response_length;
 
     location / {
